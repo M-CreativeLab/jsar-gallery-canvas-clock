@@ -1,20 +1,17 @@
-# template-for-jsar-widget
+# jsar-gallery-canvas-clock
 
-The template repository for creating the JSAR Widget.
+![](screenshot.png)
 
-## How to use
-
-Create your GitHub repository via [this link](https://github.com/new?template_name=template-for-jsar-widget&template_owner=M-CreativeLab), this uses the template repository to create your repository.
+This is a JSAR mini-app that displays a clock on a cube.
 
 ## Open
 
 Type the following URL in JSAR runtime:
 
 ```sh
-https://cdn.jsdelivr.net/gh/M-CreativeLab/template-for-jsar-widget@main/main.xsml
+https://raw.githubusercontent.com/M-CreativeLab/jsar-gallery-canvas-clock/main/main.xsml
 ```
 
 ## License
 
 Apache 2.0
-

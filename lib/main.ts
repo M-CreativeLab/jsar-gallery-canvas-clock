@@ -1,7 +1,11 @@
-const scene = spaceDocument.scene as BABYLON.Scene;
-const animationGroups = scene.animationGroups.filter((ag) => ag.name.endsWith('#model'));
+import { startClock } from './clock';
 
-if (animationGroups.length >= 1) {
-  animationGroups[0].start(true);
-}
+const canvasPanel = spatialDocument.getSpatialObjectById('canvas');
+const canvas = canvasPanel.attachCanvasTexture(512, 512);
+const ctx = canvas.getContext();
 
+startClock(ctx);
+setInterval(() => {
+  startClock(ctx);
+  canvas.update();
+}, 1000);
